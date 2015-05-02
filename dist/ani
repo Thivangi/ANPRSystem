@@ -1,0 +1,28 @@
+-----------------------------------------------------------
+Automatic number plate recognition system
+Copyright (c) Ondrej Martinsky, 2006-2007
+
+Licensed under the Educational Community License,
+
+Usage : java -jar anpr.jar [-options]
+
+Where options include:
+
+    -help         Displays this help
+    -gui          Run GUI viewer (default choice)
+    -recognize -i <snapshot>
+                  Recognize single snapshot
+    -recognize -i <snapshot> -o <dstdir>
+                  Recognize single snapshot and
+                  save report html into specified
+                  directory
+    -newconfig -o <file>
+                  Generate default configuration file
+    -newnetwork -o <file>
+                  Train neural network according to
+                  specified feature extraction method and
+                  learning parameters (in config. file)
+                  and saves it into output file
+    -newalphabet -i <srcdir> -o <dstdir>
+                  Normalize all images in <srcdir> and save
+                  it to <dstdir>.
